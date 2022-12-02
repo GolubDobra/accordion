@@ -1,0 +1,115 @@
+.Accordion {
+  margin: 20px auto;
+}
+
+.ImgWrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+  border-radius: 15px;
+
+  height: 120px;
+  transition: height 0.2s ease-out;
+}
+
+.ImgWrapper_open {
+  height: 286px;
+  pointer-events: none;
+}
+
+.Img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  width: calc(100% + 20px);
+  height: 230px;
+  border-radius: 15px;
+  pointer-events: all;
+}
+
+.ImgOverlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 1;
+
+  background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 100%
+  ),
+  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  transition: opacity 0.2s ease-out;
+}
+
+.ImgOverlay_open {
+  opacity: 0;
+}
+
+.TitleWrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  z-index: 13;
+  padding: 0 20px;
+
+  transition: top 0.2s ease-out;
+}
+
+.TitleWrapper_open {
+  top: 86px;
+}
+
+.Title {
+  font-size: 16px;
+  color: #ffffff;
+  transition: color 0.2s ease-out;
+  margin-right: 20px;
+}
+
+.Title_open {
+  color: #000000;
+}
+
+.Chevron {
+  transition: transform 0.2s ease-out;
+  flex-shrink: 0;
+}
+
+.Chevron_open {
+  transform: rotate(180deg);
+  pointer-events: all;
+}
+
+.TextAccordion {
+  color: #707070;
+  position: relative;
+  background: #ffffff;
+  border-radius: 15px;
+  pointer-events: none;
+  overflow: hidden;
+
+  max-height: 0;
+  transition: max-height 0.2s ease-out, margin-top 0.2s ease-out;
+}
+
+.TextAccordion_open {
+  max-height: 400px;
+  margin-top: -112px;
+}
+
+.TextWrapper {
+  margin: 88px 20px 42px;
+  pointer-events: all;
+}
