@@ -1,0 +1,14 @@
+{
+  "bundle.css": "bundle.c3777.css",
+  "bundle.js": "bundle.50f10.esm.js",
+  "bundle.js.map": "bundle.50f10.esm.js.map",
+  "polyfills.js": "polyfills.18b05.esm.js",
+  "polyfills.js.map": "polyfills.18b05.esm.js.map",
+  "img.avif": "0ee29f427227358cf039ed6352914df5.avif",
+  "img.png": "5d3f7e9be6622bde2ed9821443c2cdc0.png",
+  "img.webp": "e3b92e5036300be4acb2edbe6474a8f1.webp",
+  "sw-esm.js": "sw-esm.js",
+  "sw-esm.js.map": "sw-esm.js.map",
+  "sw.js": "sw.js",
+  "sw.js.map": "sw.js.map"
+}
